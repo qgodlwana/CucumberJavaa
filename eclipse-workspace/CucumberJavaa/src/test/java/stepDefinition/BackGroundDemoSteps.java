@@ -35,12 +35,12 @@ public class BackGroundDemoSteps {
 	public void user_enters_username_and_password() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	@And("click on login button")
 	public void click_on_login_button() throws InterruptedException {
 		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Then("user is navigated to the homepage")
@@ -54,7 +54,7 @@ public class BackGroundDemoSteps {
 	@When("user clicks on welcome link")
 	public void user_clicks_on_welcome_link() throws InterruptedException {
 		driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Then("logout link is displayed")
@@ -65,7 +65,7 @@ public class BackGroundDemoSteps {
 	@When("user clicks on dashboard link")
 	public void user_clicks_on_dashboard_link() throws InterruptedException {
 		driver.findElement(By.xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][normalize-space()='Dashboard']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Then("quick launch toolbar is displayed")
